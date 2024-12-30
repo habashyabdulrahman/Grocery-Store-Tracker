@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+
+html {
+    direction: rtl;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Changa", serif;
     margin: 20px;
-    background-color: #f4f4f9;
+    background-color: #222;
+    color: #fff;
 }
 
 h1,
 h2 {
-    color: #333;
     text-align: center;
 }
 
@@ -31,6 +37,11 @@ form button, .save {
     cursor: pointer;
 }
 
+input::placeholder {
+    font-size: 20px;
+    font-family: "Changa", serif;
+}
+
 form button:hover , .save:hover {
     background-color: #218838;
 }
@@ -45,6 +56,7 @@ table,
 th,
 td {
     border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 table th,
@@ -53,17 +65,8 @@ table td {
     text-align: center;
 }
 
-table th {
-    background-color: #f8f9fa;
-    color: #333;
-}
-
 table tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-
-table tr:hover {
-    background-color: #ddd;
 }
 
 .delete {
@@ -95,6 +98,8 @@ a {
 
         button {
             margin-top: 10px;
+            font-size: 15px;
+            font-family: "Changa", serif;
         }
     }
 
