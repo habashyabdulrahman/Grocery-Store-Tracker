@@ -67,10 +67,6 @@ table td {
     text-align: center;
 }
 
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 .delete {
     padding: 10px 15px;
     background-color: #A72828FF;
