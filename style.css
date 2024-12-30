@@ -37,6 +37,8 @@ form button, .save {
     cursor: pointer;
 }
 
+input { font-size: 20px; }
+
 input::placeholder {
     font-size: 20px;
     font-family: "Changa", serif;
