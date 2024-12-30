@@ -58,7 +58,6 @@ table,
 th,
 td {
     border: 1px solid #ddd;
-    border-radius: 10px;
 }
 
 table th,
@@ -108,6 +107,7 @@ a {
     }
 
     .gap {
+        display: grid;
         gap: 10px;
     }
 }
