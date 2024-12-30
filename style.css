@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+h1,
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input, .input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button, .save {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover , .save:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+.delete {
+    padding: 10px 15px;
+    background-color: #A72828FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #882121FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.update-form {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            margin-top: 10px;
+        }
+    }
+
+    .input {
+        width: 50px;
+    }
+
+    .gap {
+        gap: 10px;
+    }
+}
