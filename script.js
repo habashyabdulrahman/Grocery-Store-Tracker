@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         customers.forEach((customer, index) => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${customer.name}</td>
+                <td class="name">${customer.name}</td>
                 <td>
                     <input class="input" type="number" step="0.01" value="${customer.balance}" id="balance-${index}">
                 </td>
