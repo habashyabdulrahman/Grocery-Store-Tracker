@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
     <title>Store Management</title>
 
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <h1>إدارة المتجر</h1>
+    <script
+      type="text/javascript"
+      src="https://udbaa.com/bnr.php?section=General&pub=365279&format=300x50&ga=g"></script>
+    <noscript
+      ><a href="https://yllix.com/publishers/365279" target="_blank"
+        ><img
+          src="//ylx-aff.advertica-cdn.com/pub_2hpya3.png"
+          style="border: none; margin: 0; padding: 0; vertical-align: baseline"
+          alt="ylliX - Online Advertising Network" /></a
+    ></noscript>
     <form id="customerForm">
-        <input type="text" id="name" placeholder="اسم العميل" required>
-        <input type="number" step="0.01" id="balance" placeholder="المبلغ" required>
-        <button type="submit">اضافة عميل</button>
+      <input type="text" id="name" placeholder="اسم العميل" required />
+      <input
+        type="number"
+        step="0.01"
+        id="balance"
+        placeholder="المبلغ"
+        required />
+      <button type="submit">اضافة عميل</button>
     </form>
     <h2>العملاء</h2>
     <table>
-        <thead>
-            <tr>
-                <th>الاسم</th>
-                <th>المبلغ</th>
-                <th>الاجراء</th>
-            </tr>
-        </thead>
-        <tbody id="customerTable"></tbody>
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>المبلغ</th>
+          <th>الاجراء</th>
+        </tr>
+      </thead>
+      <tbody id="customerTable"></tbody>
     </table>
+    <script
+      type="text/javascript"
+      src="https://udbaa.com/bnr.php?section=General&pub=365279&format=300x50&ga=g"></script>
+    <noscript
+      ><a href="https://yllix.com/publishers/365279" target="_blank"
+        ><img
+          src="//ylx-aff.advertica-cdn.com/pub_2hpya3.png"
+          style="border: none; margin: 0; padding: 0; vertical-align: baseline"
+          alt="ylliX - Online Advertising Network" /></a
+    ></noscript>
 
     <!-- Popup Modal -->
     <div id="popup" class="popup hidden">
-        <div class="popup-content">
-            <p>هل أنت متأكد من أنك تريد حذف هذا العميل؟</p>
-            <button id="confirmDelete">نعم</button>
-            <button id="cancelDelete">لا</button>
-        </div>
+      <div class="popup-content">
+        <p>هل أنت متأكد من أنك تريد حذف هذا العميل؟</p>
+        <button id="confirmDelete">نعم</button>
+        <button id="cancelDelete">لا</button>
+      </div>
     </div>
     <script src="script.js"></script>
 
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js')
-                .then(() => console.log('Service Worker Registered'))
-                .catch((err) => console.error('Service Worker Registration Failed:', err));
-        }
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then(() => console.log("Service Worker Registered"))
+          .catch((err) =>
+            console.error("Service Worker Registration Failed:", err)
+          );
+      }
     </script>
-</body>
-
+  </body>
 </html>
